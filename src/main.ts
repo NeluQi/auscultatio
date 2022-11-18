@@ -20,11 +20,21 @@ import '@ionic/vue/css/text-transformation.css';
 import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
+
+import 'primevue/resources/themes/saga-blue/theme.css';
+import 'primevue/resources/primevue.min.css';
+import 'primeicons/primeicons.css';
+import 'primevue/resources/themes/bootstrap4-light-blue/theme.css';
+import 'primeflex/primeflex.css';
+
+
+
 /* Theme variables */
 import './theme/variables.css';
+import PrimeVue from 'primevue/config';
 
 const app = createApp(App)
-  .use(IonicVue)
+  .use(IonicVue).use(PrimeVue)
   .use(router);
   
 router.isReady().then(() => {

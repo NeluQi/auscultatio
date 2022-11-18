@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
+  { path: '/:catchAll(.*)', redirect: '/' },
   {
     path: '/',
     redirect: '/tabs/tab1'
@@ -17,7 +18,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        component: () => import('@/views/Tab1PageGame.vue')
       },
       {
         path: 'tab2',
