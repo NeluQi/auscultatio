@@ -1,7 +1,0 @@
-{
-  "name": "auscultatio",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
